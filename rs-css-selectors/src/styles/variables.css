@@ -1,0 +1,21 @@
+:root {
+  --black: rgb(28, 28, 28);
+  --white: whitesmoke;
+  --red: #ff4500;
+  --orange: rgb(255, 106, 0);
+  --green: #66ce51;
+  --yellow: #ffd208;
+  --purple: #7c69fa;
+  --blue: rgb(88, 174, 255);
+  --pink: #FF74E9;
+  --back: #313131;
+  --border: #5d5d5d;
+  --item--back: #3d3d3d;
+  --button--grey: #f5f5f5;
+  --button--hover-grey: #d8d8d8;
+  --back--grey: #DDDDDD;
+  --text--grey: #868686;
+  --overlay: rgba(28, 28, 28, 0.8);
+
+  --button-height: 24px;
+}

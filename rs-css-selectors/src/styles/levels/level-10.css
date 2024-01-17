@@ -1,0 +1,61 @@
+/* LEVEL 10 */
+
+.level--10 .tag-line {
+  padding-left: 20px;
+}
+
+.level--10 .tag-line:nth-child(3),
+.level--10 .tag-line:nth-child(6) {
+  padding-left: 40px;
+}
+
+.level--10 .tag-line:first-child,
+.level--10 .tag-line:last-child {
+  padding-left: 0;
+}
+
+.level--10 box {
+  width: 110px;
+  height: 110px;
+}
+
+.level--10 box:nth-child(2) {
+  background-color: var(--border);
+}
+
+.level--10 ball {
+  background-color: var(--green);
+}
+
+.level--10 ball.yellow {
+  background-color: var(--yellow);
+}
+
+.level--10 ball.small {
+  width: 40px;
+  height: 40px;
+}
+
+/**/
+
+@media all and (max-width: 480px) {
+  .level--10 .playground {
+    gap: 12px;
+  }
+
+  .level--10 box {
+    width: 95px;
+    height: 95px;
+  }
+
+  .level--10 ball {
+    width: 70px;
+    height: 70px;
+  }
+
+  .level--10 ball.small {
+    width: 25px;
+    height: 25px;
+  }
+}
+

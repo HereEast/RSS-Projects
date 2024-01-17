@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+}
+
+.footer__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 20px;
+
+  border: 1px solid var(--border);
+}
+
+.footer a {
+  color: var(--white);
+  text-decoration: none;
+  display: inline;
+  text-align: right;
+}
+
+/**/
+
+@media all and (max-width: 450px) {
+  .footer__container {
+    padding: 15px 10px;
+  }
+
+  .footer__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}

@@ -1,0 +1,118 @@
+.header {
+  width: 100%;
+  background-color: var(--back);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  cursor: default;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+.header__controls,
+.header__buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.level__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.header__levels {
+  display: none;
+}
+
+.header__levels span {
+  display: block;
+}
+
+/* ICON */
+
+.logo__icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo__icon svg {
+  width: 60px;
+  height: 13px;
+}
+
+.header__logo .icon path,
+.header__logo .icon circle,
+.header__logo .icon rect {
+  transition: all 0.2s cubic-bezier(0.5, 1.8, 0.6, 1.5);
+}
+
+.header__logo .icon path {
+  transform: translateX(0);
+  transition-delay: 0;
+}
+
+.header__logo .icon rect {
+  transform: translateX(0);
+  transition-delay: 0.1s;
+}
+
+.header__logo .icon circle {
+  transform: translateX();
+  transition-delay: 0.2s;
+}
+
+.header__logo:hover .icon path {
+  transform: translateX(10px);
+  transition-delay: 0;
+}
+
+.header__logo:hover .icon rect {
+  transform: translateX(10px);
+  transition-delay: 0.1s;
+}
+
+.header__logo:hover .icon circle {
+  transform: translateX(10px);
+  transition-delay: 0.2s;
+}
+
+/**/
+
+@media all and (max-width: 980px) {
+  .header {
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .header__levels {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .header {
+    padding: 20px 10px;
+  }
+
+  .logo__icon {
+    display: none;
+  }
+}

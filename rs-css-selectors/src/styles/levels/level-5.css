@@ -1,0 +1,90 @@
+/* LEVEL 5 */
+
+.level--5 .tag-line {
+  padding-left: 20px;
+}
+
+.level--5 .tag-line:nth-child(4),
+.level--5 .tag-line:nth-child(7) {
+  padding-left: 40px;
+}
+
+.level--5 .tag-line:first-child,
+.level--5 .tag-line:last-child {
+  padding-left: 0;
+}
+
+.level--5 ball,
+.level--5 box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.level--5 ball {
+  width: 110px;
+  height: 110px;
+}
+
+.level--5 ball fish,
+.level--5 box fish {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  width: 60px;
+  height: 40px;
+}
+
+.level--5 fish {
+  background-image: url("../../assets/fish--yellow.svg");
+}
+
+@media all and (max-width: 550px) {
+  .level--5 .playground {
+    gap: 15px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .level--5 .playground {
+    gap: 12px;
+  }
+
+  .level--5 ball {
+    width: 90px;
+    height: 90px;
+  }
+
+  .level--5 box {
+    width: 85px;
+    height: 85px;
+  }
+
+  .level--5 fish.small {
+    width: 50px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .level--5 ball {
+    width: 80px;
+    height: 80px;
+  }
+
+  .level--5 box {
+    width: 75px;
+    height: 75px;
+  }
+
+  .level--5 fish.small {
+    width: 45px;
+  }
+
+  .level--5 ball.small {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,80 @@
+/* LEVEL 2 */
+
+.level--2 .tag-line:nth-child(2),
+.level--2 .tag-line:nth-child(n + 5):nth-child(-n + 7) {
+  padding-left: 20px;
+}
+
+.level--2 .tag-line:nth-child(3),
+.level--2 .tag-line:nth-child(4) {
+  padding-left: 40px;
+}
+
+.level--2 fish {
+  position: relative;
+  width: 180px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.level--2 fish ball {
+  width: 40px;
+  height: 40px;
+  background-color: var(--yellow);
+  position: absolute;
+}
+
+.level--2 fish ball:first-child {
+  left: 35px;
+}
+
+.level--2 fish ball:last-child {
+  right: 60px;
+}
+
+.level--2 ball {
+  background-color: var(--green);
+}
+
+/**/
+
+@media all and (max-width: 480px) {
+  .level--2 .playground {
+    gap: 15px;
+  }
+
+  .level--2 fish {
+    width: 160px;
+    height: 100px;
+  }
+
+  .level--2 fish ball {
+    width: 30px;
+    height: 30px;
+  }
+
+  .level--2 ball {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .level--2 fish {
+    width: 150px;
+    height: 100px;
+  }
+
+  .level--2 fish ball {
+    width: 25px;
+    height: 25px;
+  }
+
+  .level--2 ball {
+    width: 70px;
+    height: 70px;
+  }
+}

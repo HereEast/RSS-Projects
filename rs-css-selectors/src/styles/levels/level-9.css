@@ -1,0 +1,53 @@
+/* LEVEL 9 */
+
+.level--9 .tag-line {
+  padding-left: 20px;
+}
+
+.level--9 .tag-line:nth-child(6) {
+  padding-left: 40px;
+}
+
+.level--9 .tag-line:first-child,
+.level--9 .tag-line:last-child {
+  padding-left: 0;
+}
+
+.level--9 box {
+  background-color: var(--border);
+}
+
+.level--9 box:nth-child(2) {
+  background-color: var(--yellow);
+}
+
+.level--9 box triangle {
+  border-width: 0 30px 45px 30px;
+  border-color: transparent transparent var(--yellow) transparent;
+}
+
+@media all and (max-width: 550px) {
+  .level--9 .playground {
+    gap: 15px;
+  }
+
+  .level--9 box {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media all and (max-width: 460px) {
+  .level--9 box {
+    width: 75px;
+    height: 75px;
+  }
+
+  .level--9 bear {
+    width: 55px;
+  }
+
+  .level--9 box triangle {
+    border-width: 0 25px 40px 25px;
+  }
+}

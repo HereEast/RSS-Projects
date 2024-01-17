@@ -1,0 +1,33 @@
+/* LEVEL 1 */
+
+.level--1 .playground {
+  gap: 10px;
+}
+
+.level--1 .tag-line:nth-child(2),
+.level--1 .tag-line:nth-child(3),
+.level--1 .tag-line:nth-child(4) {
+  padding-left: 20px;
+}
+
+.level--1 ball {
+  width: 100px;
+  height: 100px;
+}
+
+/**/
+
+@media all and (max-width: 420px) {
+  .level--1 .playground {
+    gap: 5px;
+  }
+
+  .level--1 ball {
+    width: 90px;
+    height: 90px;
+  }
+
+  .level--1 triangle {
+    border-width: 0 55px 80px 55px;
+  }
+}

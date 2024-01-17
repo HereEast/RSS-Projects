@@ -1,0 +1,64 @@
+box {
+  width: 100px;
+  height: 100px;
+  background-color: var(--purple);
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 60px 90px 60px;
+  border-color: transparent transparent var(--green) transparent;
+}
+
+triangle.small {
+  border-width: 0 30px 45px 30px;
+}
+
+ball {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: var(--purple);
+}
+
+ball.small {
+  width: 50px;
+  height: 50px;
+  background-color: var(--green);
+}
+
+fish {
+  width: 100px;
+  height: 100px;
+  background-image: url("../../assets/fish.svg");
+}
+
+duck {
+  width: 100px;
+  height: 100px;
+  background-image: url("../../assets/duck.svg");
+}
+
+bear {
+  width: 80px;
+  height: 100px;
+  background-image: url("../../assets/bear.svg");
+}
+
+@import "./level-1.css";
+@import "./level-2.css";
+@import "./level-3.css";
+@import "./level-4.css";
+@import "./level-5.css";
+@import "./level-6.css";
+@import "./level-7.css";
+@import "./level-8.css";
+@import "./level-9.css";
+@import "./level-10.css";

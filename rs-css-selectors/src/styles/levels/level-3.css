@@ -1,0 +1,28 @@
+/* LEVEL 3 */
+
+.level--3 .playground {
+  gap: 10px;
+}
+
+.level--3 .tag-line {
+  padding-left: 20px;
+}
+
+.level--3 .tag-line:first-child,
+.level--3 .tag-line:last-child {
+  padding-left: 0;
+}
+
+.level--3 bear:nth-child(2) {
+  background-image: url("../../assets/bear--pink.svg");
+}
+
+@media all and (max-width: 420px) {
+  .level--3 .playground {
+    gap: 15px;
+  }
+
+  .level--3 bear {
+    width: 60px;
+  }
+}
