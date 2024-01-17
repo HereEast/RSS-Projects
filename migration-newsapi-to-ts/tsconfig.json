@@ -1,0 +1,16 @@
+{
+  "include": ["src/**/*.ts", "src/**/*.js", "custom.d.ts"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "strict": true,
+    "noImplicitAny": true,
+    // "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./src",
+    "outDir": "./dist"
+  }
+}
