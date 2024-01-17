@@ -1,0 +1,80 @@
+.track {
+  position: relative;
+  border-top: 1px solid var(--white);
+}
+
+.track:last-child {
+  border-bottom: 1px solid var(--white);
+}
+
+.track__container {
+  padding: 10px 0;
+  position: relative;
+}
+
+.track__header {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+
+  position: absolute;
+  margin-top: -5px;
+}
+
+.track__buttons {
+  display: flex;
+  gap: 4px;
+  margin-left: -2px;
+}
+
+.car__name {
+  position: relative;
+  padding-left: 16px;
+}
+
+.car__name::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-image: url("../../assets/arrow-right.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 5px;
+}
+
+/* BODY */
+
+.track__body {
+  width: 100%;
+  position: relative;
+  height: 65px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.car {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 100;
+}
+
+.car svg {
+  border-radius: 50%;
+}
+
+.flag {
+  width: 30px;
+  height: 65px;
+  background-image: url("../../assets/finish.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+}

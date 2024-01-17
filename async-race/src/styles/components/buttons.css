@@ -1,0 +1,162 @@
+button {
+  border: 0;
+  outline: 0;
+  font-family: var(--font);
+  font-size: var(--button-font-size);
+  color: var(--black);
+  height: 30px;
+  padding: 0 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  background-color: var(--white);
+  border-radius: 30px;
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 100;
+  user-select: none;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in;
+}
+
+button:not(.button__view):hover {
+  opacity: 1;
+  background-color: var(--button-hover-white);
+}
+
+.button__view {
+  width: 120px;
+  height: 60px;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 18px;
+  text-transform: capitalize;
+
+  transition: color 0.2s ease-in;
+}
+
+.button__view.active {
+  color: var(--black);
+  cursor: default;
+}
+
+form button {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.button__cancel,
+.button__reset,
+.button__page {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.button__cancel:hover,
+.button__reset:hover,
+.button__page:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.button__race {
+  background-color: var(--green);
+}
+
+button.button__race:hover {
+  background-color: var(--button-hover-primary);
+}
+
+.button__race:disabled,
+button.button__race:disabled:hover {
+  background-color: var(--green);
+  opacity: 0.6;
+  cursor: default;
+}
+
+.button__page {
+  height: 20px;
+  padding: 0 10px;
+}
+
+.button__page:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+button.button__page:disabled:hover {
+  cursor: default;
+  opacity: 0.5;
+  background-color: transparent;
+  color: var(--white);
+}
+
+/* Track */
+.button__track {
+  font-size: 14px;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: var(--track-button-color);
+
+  padding: 0 5px;
+  height: 20px;
+}
+
+button.button__track:hover {
+  color: var(--white);
+  background-color: var(--black-light);
+}
+
+button.button__track:disabled,
+button.button__track:disabled {
+  cursor: default;
+  background-color: transparent;
+  color: var(--track-button-color);
+}
+
+.button__create:disabled,
+.button__create:disabled:hover,
+.button__generate:disabled,
+.button__generate:disabled:hover {
+  background-color: var(--white);
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Sort */
+
+button.button__sort--wins,
+button.button__sort--time,
+button.button__sort--ids {
+  padding: 0 2px 0 1px;
+  width: 15px;
+  height: 24px;
+  border-radius: 10px;
+
+  background-color: var(--black-light);
+  background-image: url("../../assets/sort.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+button.button__sort--wins:hover,
+button.button__sort--time:hover,
+button.button__sort--ids:hover {
+  background-image: url("../../assets/sort-black.svg");
+}
+
+/**/
+
+@media all and (max-width: 720px) {
+  .button__view {
+    width: 50%;
+  }
+}

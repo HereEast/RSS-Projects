@@ -1,0 +1,15 @@
+{
+  "include": ["src/**/*.ts", "src/**/*.js", "custom.d.ts"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "target": "es2021",
+    "module": "commonjs",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./src",
+    "outDir": "./dist"
+  }
+}

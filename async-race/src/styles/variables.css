@@ -1,0 +1,25 @@
+:root {
+  --black: #1C1C1C;
+  --white: whitesmoke;
+  --green: #6BD856;
+  --shadow: #131313;
+
+  --page-padding: 20px;
+  --font: "Inter", "Arial", sans-serif;
+
+  /* BUTTONS */
+  --button-font-size: 12px;
+  --black-light: #303030;
+  --button-hover-white: #dbdbdb;
+  --button-hover-primary: #4aaa37;
+  --track-button-color: #858585;
+
+  /*INPUTS*/
+  --input-border: #919191;
+}
+
+@media all and (max-width: 550px) {
+  :root {
+    --page-padding: 15px;
+  }
+}

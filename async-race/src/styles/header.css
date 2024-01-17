@@ -1,0 +1,64 @@
+.header {
+  width: 100%;
+  background-color: var(--black);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__container {
+  width: 100%;
+  padding: var(--page-padding);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.header__buttons {
+  display: flex;
+  position: relative;
+  border-radius: 60px;
+
+  background-color: var(--black-light);
+
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.bubble {
+  display: block;
+  width: 50%;
+  height: 60px;
+  border-radius: 60px;
+  background-color: var(--white);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.bubble.winners {
+  left: 50%;
+}
+
+/**/
+
+@media all and (max-width: 720px) {
+  .header__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header__buttons {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .header__container {
+    padding-top: 20px;
+  }
+}

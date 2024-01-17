@@ -1,0 +1,23 @@
+.pagination {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 15px;
+}
+
+.page__container {
+  display: flex;
+  gap: 5px;
+}
+
+.page__container span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.pages__buttons {
+  display: flex;
+  gap: 5px;
+}
