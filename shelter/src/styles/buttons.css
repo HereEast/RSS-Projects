@@ -1,0 +1,151 @@
+/* BUTTONS */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 30px;
+    border: none;
+    outline: none;
+
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--dark-black);
+    letter-spacing: 1px;
+
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--primary-light);
+}
+
+/* PRIMARY */
+
+.button__primary {
+    height: 52px;
+    padding: 0 45px;
+    background-color: var(--primary-color);
+}
+
+/* SECONDARY */
+
+.button__secondary {
+    height: 52px;
+    padding: 0 45px;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+}
+
+/* HERO */
+
+.button--hero {
+    max-width: 207px;
+    width: 100%;
+}
+
+/* DONATE */
+
+.button--donate {
+    height: 43px;
+    padding: 0 15px;
+    border-radius: 9px;
+    background-color: var(--primary-color);
+
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.donate__button_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+/* SLIDER */
+
+.slider__button {
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    background-color: transparent;
+    flex-shrink: 0;
+
+    font-size: 0;
+}
+
+.slider__button:hover {
+    background-color: var(--primary-color);
+}
+
+/* PAGES BUTTONS */
+
+.button__page {
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    background-color: transparent;
+    outline: none;
+    flex-shrink: 0;
+
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -1px;
+    padding-bottom: 2px;
+
+    transition: all 0.2s ease-in;
+}
+
+.button__page:hover {
+    background-color: var(--primary-color);
+}
+
+/* CURRENT */
+
+.button__page--current {
+    background-color: var(--primary-color);
+    cursor: default;
+    pointer-events: none;
+}
+
+/* DISABLED */
+
+button:disabled {
+    border: 2px solid #cdcdcd;
+    color: #cdcdcd;
+}
+
+button:disabled:hover {
+    border: 2px solid #cdcdcd;
+    color: #cdcdcd;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+/* 420 */
+
+@media all and (max-width: 420px) {
+    .button--donate {
+        padding: 0 15px;
+        height: 43px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+}
+
+/* 360 */
+
+@media all and (max-width: 359px) {
+    .button--donate {
+        padding: 0;
+        width: 280px;
+        height: 43px;
+    }
+}

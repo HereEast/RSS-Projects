@@ -1,0 +1,116 @@
+/* DONATE */
+
+.donate {
+    background-color: var(--light-bg);
+    padding: 80px 0 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.donate__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate__image img {
+    max-width: 505px;
+    width: 100%;
+    height: auto;
+}
+
+.donate__text {
+    max-width: 380px;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.donate__title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.donate__subtitle {
+    margin-bottom: 20px;
+}
+
+.donate__note {
+    margin-top: 20px;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 18px;
+    color: #b2b2b2;
+}
+
+.icon--donate {
+    width: 30px;
+    height: 25px;
+    background-image: url("../../assets/icons/credit-card.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 1000 */
+
+@media all and (max-width: 1000px) {
+    .donate {
+        padding: 80px 0 95px;
+    }
+
+    .donate__container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .donate__text {
+        margin-left: 0;
+        margin-bottom: 60px;
+    }
+}
+
+/* 630 */
+
+@media all and (max-width: 630px) {
+    .donate {
+        padding: 43px 0 38px;
+    }
+
+    .donate__text {
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 42px;
+    }
+
+    .donate__title {
+        text-align: center;
+        margin-bottom: 23px;
+    }
+
+    .donate__subtitle {
+        margin-bottom: 23px;
+        letter-spacing: 0;
+    }
+}
+
+/* 360 */
+
+@media all and (max-width: 360px) {
+    .donate__text {
+        max-width: 280px;
+    }
+
+    .donate__button {
+        width: 280px;
+    }
+
+    .donate__note {
+        text-align: justify;
+    }
+
+    .donate__image img {
+        width: 260px;
+    }
+}

@@ -1,0 +1,144 @@
+/* HELP */
+
+.help {
+    padding: 80px 0 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.help__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help__title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.help__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px 120px;
+    justify-content: center;
+    align-content: center;
+}
+
+.help__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.help__icon {
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon--food {
+    background-image: url("../../assets/icons/icon-pet-food.svg");
+}
+
+.icon--transportation {
+    background-image: url("../../assets/icons/icon-transportation.svg");
+}
+
+.icon--toys {
+    background-image: url("../../assets/icons/icon-toys.svg");
+}
+
+.icon--bowls {
+    background-image: url("../../assets/icons/icon-bowls.svg");
+}
+
+.icon--shampoos {
+    background-image: url("../../assets/icons/icon-shampoos.svg");
+}
+
+.icon--vitamins {
+    background-image: url("../../assets/icons/icon-vitamins.svg");
+}
+
+.icon--medicines {
+    background-image: url("../../assets/icons/icon-medicines.svg");
+}
+
+.icon--collars {
+    background-image: url("../../assets/icons/icon-collars.svg");
+}
+
+.icon--sleep {
+    background-image: url("../../assets/icons/icon-beds.svg");
+}
+
+.help__item_title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* 865 */
+
+@media all and (max-width: 865px) {
+    .help__grid {
+        max-width: 630px;
+        width: 100%;
+        justify-content: space-between;
+        gap: 55px 0;
+    }
+
+    .help__item {
+        width: 170px;
+    }
+}
+
+/* 630 */
+
+@media all and (max-width: 630px) {
+    .help {
+        padding: 43px 0 41px;
+    }
+
+    .help__title {
+        margin-bottom: 42px;
+    }
+
+    .help__item_title {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+/* 570 */
+
+@media all and (max-width: 570px) {
+    .help__grid {
+        max-width: 470px;
+    }
+
+    .help__item {
+        width: 130px;
+    }
+}
+
+/* 360 */
+
+@media all and (max-width: 360px) {
+    .help__grid {
+        max-width: 290px;
+        gap: 30px 0;
+    }
+
+    .help__icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .help__item_title {
+        margin-top: 19px;
+    }
+}

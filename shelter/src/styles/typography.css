@@ -1,0 +1,67 @@
+/* LOGO */
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 400;
+    letter-spacing: 1.9px;
+    color: var(--primary-color);
+}
+
+/**/
+
+h2, h3, h4, h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: var(--dark-text);
+}
+
+h2 {
+    font-size: 44px;
+    line-height: 57px;
+    color: #FFF;
+}
+
+h3 {
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.2px;
+}
+
+h5 {
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.9px;
+    color: var(--dark-text);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--dark-text);
+}
+
+
+/* 630 */
+
+@media all and (max-width: 630px) {
+    h2, h3 {
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+
+    h4 {
+        letter-spacing: 0.9px;
+    }
+}

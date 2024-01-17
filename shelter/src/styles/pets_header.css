@@ -1,0 +1,63 @@
+@import url("./basic.css");
+@import url("./header.css");
+
+/* HEADER */
+
+.header {
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+
+    position: relative;
+    top: 0;
+
+    overflow: hidden;
+}
+
+/* LOGO */
+
+.logo__title {
+    color: var(--dark-text);
+}
+
+.logo__subtitle {
+    color: var(--dark-black);
+}
+
+/* LINKS */
+
+.nav__link {
+    color: var(--dark-text);
+}
+
+.nav__link:hover {
+    color: var(--dark-black);
+}
+
+/* BURGER */
+
+.burger__line--pets {
+    background-color: var(--dark-black);
+}
+
+.burger--opened span {
+    background-color: var(--primary-color);
+}
+
+
+/**/
+/* 720 */
+/**/
+
+@media all and (max-width: 768px) {
+    .nav__link {
+        color: #cdcdcd;
+    }
+
+    .nav__link:hover {
+        color: #fff;
+    }
+}

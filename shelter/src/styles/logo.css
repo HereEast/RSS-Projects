@@ -1,0 +1,21 @@
+/* LOGO HOME */
+
+.logo {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo__subtitle {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    color: #FFF;
+    letter-spacing: 1.3px;
+
+    margin-top: 10px;
+    padding-left: 4px;
+}

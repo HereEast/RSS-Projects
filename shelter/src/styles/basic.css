@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #F1CDB3;
+    --primary-light: #FDDCC4;
+    --dark-black: #292929;
+    --light-grey: #CDCDCD;
+    --dark-text: #545454;
+    --light-bg: #F6F6F6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-width {
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 40px;
+}
+
+/**/
+/* DISABLED SCROLL*/
+/**/
+
+.scroll--disabled {
+    overflow: hidden;
+}
+
+/**/
+/* OVERLAY */
+/**/
+
+.overlay {
+    width: 100vw;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #292929;
+    opacity: 0;
+    z-index: 5;
+
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay--opened {
+    height: 100vh;
+    opacity: 0.7;
+}
+
+/**/
+/* 768 */
+/**/
+
+@media all and (max-width: 768px) {
+    .content-width {
+        padding: 0 30px;
+    }
+}
+
+/**/
+/* 360 */
+/**/
+
+@media all and (max-width: 360px) {
+    .content-width {
+        padding: 0 10px;
+    }
+}
